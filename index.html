@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- left side এর div শুরু হলো..... -->
+    <div class="left-side">
+      <h1>The Company</h1>
+      <ul>
+        <li onclick="scrollToTop()">Home</li>
+        <li onclick="scrollToShowcase()">Showcase</li>
+        <li onclick="scrollToServices()">Services</li>
+        <li onclick="scrollToDesigners()">Designers</li>
+        <li onclick="scrollToPackages()">Packages</li>
+        <li onclick="scrollToContact()">Contact</li>
+      </ul>
+    </div>
+    <!-- left side এর div শেষ হলো..... -->
+
+
+    <!-- RIght side এর div শুরু হলো..... -->
+    <div class=" right-side">
+      <h1>Interior Design</h1>
+
+
+      <!-- Showcase এর div শুরু হলো- -->
+      <div id="showcase">
+        <h2>Showcase.</h2><br><br>
+        <div class="image">
+          <img src="images/showcase-01.jpg" alt="">
+          <img src="images/showcase-02.jpg" alt="">
+          <img src="images/showcase-03.jpg" alt="">
+          <img src="images/showcase-04.jpg" alt="">
+          <img src="images/showcase-05.jpg" alt="">
+          <img src="images/showcase-06.jpg" alt="">
+        </div>
+      </div>
+      <!-- Showcase এর div শেষ হলো- -->
+
+      <br><br><br>
+
+
+      <!-- Services এর div শুরু হলো- -->
+      <div id="services"> <!--এই id এর মাধ্যমে ম্যানুবারের সাথে জাভাস্ক্রিপ্ট এর সম্পর্ক করা হয়েছে... -->
+        <h2>Services. </h2><br>
+        <p>We are a interior design service that focus on what's best for your home and what's best for you!</p><br>
+        <p>Some text about our services- what we do and what we offer. we are Lorem ipsum dolor sit, amet
+          consectetur adipisicing elit. Aut dolorem, unde repellat dignissimos qui, error vitae beatae, voluptates minus
+          accusamus libero reiciendis eveniet aperiam fugit quas laborum ab officiis excepturi. Lorem ipsum dolor sit
+          amet consectetur, adipisicing elit. Voluptates laudantium veritatis consequatur error vero aperiam. Maxime
+          quis ea dolorem quidem nulla, blanditiis provident placeat aperiam nam asperiores, reprehenderit perspiciatis
+          esse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, mollitia vitae. Optio itaque ea in
+          cupiditate cum tenetur fugit, modi esse maiores, consequuntur voluptate officia quaerat
+          suscipit porro unde explicabo.</p>
+      </div>
+      <!-- Services এর div শেষ হলো- -->
+
+
+      <br><br><br>
+
+      <!-- designers এর div শুরু হলো- -->
+      <div id="designers">
+        <h2>Designers.</h2><br>
+        <p>The best team in the world.</p><br>
+        <p>We are Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius exercitationem nostrum maiores
+          reprehenderit dolores cupiditate ducimus blanditiis ut expedita nemo sapiente, explicabo sequi, a aspernatur
+          distinctio minus beatae laborum molestias tenetur illo voluptatum. Quibusdam ut aspernatur rem magni, nulla
+          similique modi at, exercitationem excepturi voluptate consequatur eos esse assumenda blanditiis asperiores,
+          nisi
+          iusto nobis cum optio eligendi aliquid soluta ducimus saepe culpa. Nam ut minus mollitia fuga reprehenderit
+          nobis aspernatur officiis provident, quae aperiam deleniti consequuntur similique voluptatibus doloribus non
+          odit. Iure velit assumenda, fugit doloremque ratione consectetur molestiae, ad nobis voluptatibus odio error
+          debitis vel totam veniam officia blanditiis.</p><br>
+
+        <h4>Our Designers are thoughtfully chosen: </h4><br>
+
+        <div class="designers">
+          <div class="person"><img src="images/person-01.jpg" alt="">
+            <div class="person-box">
+              <h3>John Doe <br></h3>
+              <p class="designation">CEO & Founder<br></p>
+              <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pelletesque elementum.</p>
+            </div>
+          </div>
+          <div class="person"><img src="images/person-02.jpg" alt="">
+            <div class="person-box">
+              <h3>Jane Doe <br></h3>
+              <p class="designation">Designer<br></p>
+              <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pelletesque elementum.</p>
+            </div>
+          </div>
+          <div class="person"><img src="images/person-03.jpg" alt="">
+            <div class="person-box">
+              <h3>Mike Ross <br></h3>
+              <p class="designation">Architect<br></p>
+              <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pelletesque elementum.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- designers এর div শেষ হলো- -->
+
+
+      <br><br><br>
+
+
+      <!-- packages এর div শুরু হলো- -->
+      <div id="packages">
+        <h2>Packages.</h2><br>
+        <p>Some text our prices. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro possimus veritatis
+          aliquid
+          dolorem dicta quisquam blanditiis minima aspernatur facilis ut tempora voluptates quia ratione accusamus
+          nemo
+          doloribus, deserunt temporibus exercitationem.</p><br>
+
+        <div class="container1">
+
+
+          <div class="left-side1">
+            <div class="row">
+              <div class="element1"><strong>Basic</strong></div>
+              <div class="element">Floorplanning</div>
+              <div class="element">10 hours support</div>
+              <div class="element">Photography</div>
+              <div class="element">20% furniture discount</div>
+              <div class="element">Good deals</div>
+
+              <!-- left-side এর amount এর +/- এর হিসাব -->
+              <div class="element wrapper">
+                <span class="minus" onclick="decreaseAmount()">-</span>
+                <span class="amount" id="amount">$199</span>
+                <span class="plus" onclick="increaseAmount()">+</span>
+                <p id="number">1 room</p>
+              </div>
+
+              <!--left-side এর Sign Up বাটন এর জন্য -->
+              <div class="element"><button class="btn" onclick="signUp()">Sign Up</button></div>
+              <div id="signupSuccess" class="element">Thank you for choosing 1 room.</div>
+
+            </div>
+          </div>
+
+
+          <div class="right-side1">
+            <div class="row">
+              <div class="element2"><strong>Pro</strong></div>
+              <div class="element">Floorplanning</div>
+              <div class="element">50 hours support</div>
+              <div class="element">Photography</div>
+              <div class="element">50% furniture discount</div>
+              <div class="element">GREAT deals</div>
+
+
+              <!-- right-side এর amount এর +/- এর হিসাব -->
+              <div class="element wrapper">
+                <span class="minus" onclick="decreaseAmount2()">-</span>
+                <span class="amount" id="amount2">$249</span>
+                <span class="plus" onclick="increaseAmount2()">+</span>
+                <p id="number2">1 room</p>
+              </div>
+
+              <!-- right-side এর Sign Up বাটন এর জন্য -->
+              <div class="element"><button class="btn" onclick="signUp2()">Sign Up</button></div>
+              <div id="signupSuccess2" class="element">Thank you for choosing 1 room.</div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- packages এর div শেষ হলো- -->
+
+
+      <br><br><br>
+
+
+      <!-- contact এর div শুরু হলো- -->
+      <div id="contact">
+        <h2>Contact.</h2><br>
+        <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new
+          people!</p> <br>
+
+        <div class="form">
+          <form action="">
+            <label>Name </label> <br>
+            <input type="text" name="name" required><br>
+
+            <label>Email </label> <br>
+            <input type="email" name="email" required><br>
+
+            <label>Message </label> <br>
+            <input type="text" name="message" required><br>
+
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+
+
+        </div>
+      </div>
+      <!-- contact এর div শেষ হলো- -->
+
+    </div>
+    <!-- RIght side এর div শেষ হলো..... -->
+
+
+  </div>
+
+
+
+
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
